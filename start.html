@@ -2,110 +2,100 @@
 <html>
 <head>
 	<title>Booking.com</title>
+	<link rel= "shortcut icon" type = "image/png" href = "favicon.png">
+	
 	<style type="text/css">
+		body{
+				margin: 0px;
+		}
+		.logo{
+				margin-left: 57px;
+		}
 		.header {
-
 			    height: 60px;
-				background-color: #013580;
-				margin: -9px;
+				background-color: #013580;				
 				padding-top: 10px;
-				
 		}
-		.button_position{
+		.link_bar{
 				background-color: #013580;
-				margin: -9px;
-				
-				
-				}
-		.button{
-			height: 40px;
-			margin-left: 4px;
-			margin-bottom: 10px;
-			background-color: transparent;
-			border: transparent;
-			outline: none;
-			border-radius: 5px;
-			color: white;
-			font-size: 13px;
-			font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+				height: 40px;
 		}
-		.button:hover {
-			background-color: #1a4a8d;
+		.link_position{
+				margin-left:40px;
 		}
-		
-		
+		.link{	
+				color: white;
+				font-size: 15px;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+				padding:8px;
+				border-radius: 3px;
+				text-decoration: none;
+				margin:16px;
+		}
+		.link:hover {
+				background-color: #1a4a8d;
+		}
 		.Reg_Log{
-			float: right;
-			left: 30px;
-			margin-right: 100px;
-			font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-			
-			}
-			
+				float: right;
+				left: 30px;
+				margin-right: 100px;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;		
+		}			
 		.Register, .Login{
 				Background-color: white;
 				Height: 30px;
-				Border-radius: 7px;
+				Border-radius: 5px;
 				font-weight: bold;
 				padding: 6px;
 				margin: 5px;
 				font-size: 13px;
 		}	
 		.ListYP{
-			background-color: transparent;
-			font-weight: bold;
-			padding:4px;
-			border: solid 1px white;
-			Border-radius: 4px;
-			color: white;
-			padding: 5px;
-			margin: 5px;
+				background-color: transparent;
+				font-weight: bold;
+				padding:4px;
+				border: solid 1px white;
+				Border-radius: 3px;
+				color: white;
+				padding: 5px;
+				margin: 5px;
 		}
 		.ListYP:hover {
-			background-color: #1a4a8d;
+				background-color: #1a4a8d;
 		}
 		.currencyflag{
-			margin-right: 15px;
+				margin-right: 15px;
+				color: white;
+				font-weight: bolder;
+				text-decoration: none;		
 		}
-<!--		.currencyflag .tooltiptext {
-				visibility: hidden;
-				width: 120px;
-				background-color: black;
-				color: #fff;
-				text-align: center;
-				border-radius: 6px;
-				padding: 5px 0;
 
-				position: absolute;
-				z-index: 1;
-		}
-		.currencyflag:hover .tooltiptext {
-			visibility: visible;
-		}
-		-->
+
 	</style>
 	<script></script>
 </head>
-<body>
-	<div class="header">
+<body >
+	<header class="header">
 		<div>
-			<img src="Logo.png" style = "margin-left: 58px">
+			<img class ="logo" src="Logo.png" >
 			<div class= "Reg_Log">
-			    <img class = "currencyflag" src="Currency.png" >
-				<!--	<span class="tooltiptext">Tooltip currency</span>   -->
-				<img class = "currencyflag" src="Flag.png" >
-				<!--	<span class="tooltiptext">Tooltip flag</span>		-->
-				<input class = "ListYP" type="button" value="List your property" />
+				<a href="https://www.toptal.com/designers/htmlarrows/currency/indian-rupee-sign/" class = "currencyflag">&#x20B9;</a>
+				<a href="https://www.google.com"class = "currencyflag">
+					<img  src="Flag.png">
+				</a>	
+				<input class = "ListYP" type="button" value="List Your Property" />
 				<input class = "Register" type="button" value="Register"/>
 				<input class = "Login" type="button" value="Login"/>
 			</div>
 		</div>
-	</div>
-	<div class = "button_position" >
-		<input class= "button" type="button" value="Accomodation" style = "margin-left: 59px"/>
-		<input class= "button" type="button" value="Flights"/>
-		<input class= "button" type="button" value="Car Rentals"/>
-		<input class= "button" type="button" value="Airport Taxi"/>
+	</header>
+	<div class = "link_bar" >
+		<div class = "link_position">
+			<a href = "https://www.google.com" class ="link" >Accomodations</a>
+			<a href = "https://www.facebook.com" class ="link" >Flights</a>
+			<a href = "https://www.youtube.com" class ="link" >Car Rentals</a>
+			<a href = "https://www.google.com" class ="link" >Airport Taxis</a>
+		</div>
 	</div>
 
 </body>

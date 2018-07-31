@@ -67,8 +67,24 @@
 				margin-right: 15px;
 				color: white;
 				font-weight: bolder;
-				text-decoration: none;		
+				text-decoration: none;
+				position: relative;		
 		}
+		.currencyflag:hover .tooltip{
+			display: block;
+		}
+		.tooltip {
+				border: solid 1px white;
+				background-color: #a5723d;
+				padding: 9px;
+				font-size: 12px;
+				font-weight:  normal;
+				display: none;
+				position: absolute;
+				top: 24px;
+				left: 13px;
+				width: 60px;
+			}
 
 
 	</style>
@@ -82,6 +98,7 @@
 				<a href="https://www.toptal.com/designers/htmlarrows/currency/indian-rupee-sign/" class = "currencyflag">&#x20B9;</a>
 				<a href="https://www.google.com"class = "currencyflag">
 					<img  src="Flag.png">
+					<div class ="tooltip">flag tooltip</div>
 				</a>	
 				<input class = "ListYP" type="button" value="List Your Property" />
 				<input class = "Register" type="button" value="Register"/>

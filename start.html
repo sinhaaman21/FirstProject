@@ -19,9 +19,7 @@
 		.link_bar{
 				background-color: #013580;
 				height: 40px;
-		}
-		.link_position{
-				margin-left:40px;
+				padding-left: 40px;
 		}
 		.link{	
 				color: white;
@@ -71,11 +69,11 @@
 				position: relative;		
 		}
 		.currencyflag:hover .tooltip{
-			display: block;
+			    display: block;
 		}
 		.tooltip {
 				border: solid 1px white;
-				background-color: #a5723d;
+				background-color: #fe8202;
 				padding: 9px;
 				font-size: 12px;
 				font-weight:  normal;
@@ -84,9 +82,75 @@
 				top: 24px;
 				left: 13px;
 				width: 60px;
-			}
-
-
+				border-radius: 8px;
+		}
+		.destinations{
+				position: relative;
+				top: 100px;
+				left: 40px;
+				display: inline-block;
+				margin-left: 86px;
+		}
+		.imagerow1, .imagerow2 {
+				position: relative;	
+		}
+		.imagerow1coloum{
+				height: 250px;
+				width: 550px;
+				padding: 6px;
+				display: inline-block;
+		}
+		.imagerow2coloum{
+				height: 250px;
+				width: 366px;
+				padding: 4px;
+				display: inline-block;
+		}
+		.city{
+				position: absolute;
+				top: -228px;
+				left: 32px;
+				font-size: 25px;
+				font-weight: bolder;
+				color: white;
+				text-decoration: none;
+				text-shadow: 1px 1px 1px #000;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		}	
+		.properties{
+				position: absolute;
+				top: -210px;
+				left: 32px;	
+				color: white;
+				text-shadow: 1px 1px 1px #000;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		}
+		.pricerow1{
+				position: absolute;
+				top: -61px;
+				left: 435px;	
+				background-color: #383838;
+				text-align: right;
+				border: 1px solid #383838;
+				color: white;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+				font-size: 12px;
+				border-radius: 2px;
+				padding: 5px;				
+		}
+		.pricerow2{
+				position: absolute;
+				top: -61px;
+				left: 273px;	
+				background-color: #383838;
+				text-align: right;
+				border: 1px solid #383838;
+				color: white;
+				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+				font-size: 12px;
+				border-radius: 2px;
+				padding: 5px;				
+		}
 	</style>
 	<script></script>
 </head>
@@ -95,7 +159,9 @@
 		<div>
 			<img class ="logo" src="Logo.png" >
 			<div class= "Reg_Log">
-				<a href="https://www.toptal.com/designers/htmlarrows/currency/indian-rupee-sign/" class = "currencyflag">&#x20B9;</a>
+				<a href="https://www.toptal.com/designers/htmlarrows/currency/indian-rupee-sign/" class = "currencyflag">&#x20B9;
+					<div class ="tooltip">currency tooltip</div>
+				</a>	
 				<a href="https://www.google.com"class = "currencyflag">
 					<img  src="Flag.png">
 					<div class ="tooltip">flag tooltip</div>
@@ -107,14 +173,65 @@
 		</div>
 	</header>
 	<div class = "link_bar" >
-		<div class = "link_position">
+		
 			<a href = "https://www.google.com" class ="link" >Accomodations</a>
 			<a href = "https://www.facebook.com" class ="link" >Flights</a>
 			<a href = "https://www.youtube.com" class ="link" >Car Rentals</a>
 			<a href = "https://www.google.com" class ="link" >Airport Taxis</a>
+		
+	</div>
+	
+	<div class = "destinations" >
+		<div >
+			<span class= "imagerow1">
+				<img  src="banglore.png" class="imagerow1coloum">
+				<a href = "https://www.google.com" class = "city" >Banglore
+					<img  src="Flag.png">
+				</a>
+				<p class = "properties" >1,387 properties</p>
+				<p class = "pricerow1">Average price<br/>&#x20B9; 2,140</p>
+			</span>
+			
+			<span class= "imagerow1">
+				<img  src="chennai.png" class="imagerow1coloum">
+				<a href = "https://www.google.com" class = "city" >Chennai
+					<img  src="Flag.png">
+				</a>
+				<p class = "properties" >1,387 properties </p>
+				<p class = "pricerow1">Average price<br/>&#x20B9; 2,140</p>
+			</span>
+			
+		</div>
+		<div>
+			<span  class= "imagerow2">
+				<img  src="mumbai.png" class="imagerow2coloum">
+				<a href = "https://www.google.com" class = "city" >Mumbai
+					<img  src="Flag.png">
+				</a>
+				<p class = "properties" >1,387 properties</p>
+				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
+			</span>
+			<span  class= "imagerow2">
+				<img  src="newdelhi.png" class="imagerow2coloum">
+				<a href = "https://www.google.com" class = "city" >New Delhi
+					<img  src="Flag.png">
+				</a>
+				<p class = "properties" >1,387 properties</p>
+				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
+			</span>
+			<span  class= "imagerow2">
+				<img  src="hyderabad.png" class="imagerow2coloum" >
+				<a href = "https://www.google.com" class = "city" >Hyderabad
+					<img  src="Flag.png">
+				</a>
+				<p class = "properties" >1,387 properties</p>
+				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
+			</span>
 		</div>
 	</div>
-
+	
+	
+	
 </body>
 
 

@@ -85,30 +85,32 @@
 				border-radius: 8px;
 		}
 		.destinations{
-				position: relative;
-				top: 100px;
-				left: 40px;
-				display: inline-block;
-				margin-left: 86px;
+			margin-top: 40px;
+			padding: 0 120px 0 120px;
 		}
-		.imagerow1, .imagerow2 {
+		.imagerow {
 				position: relative;	
-		}
-		.imagerow1coloum{
-				height: 250px;
-				width: 550px;
-				padding: 6px;
 				display: inline-block;
+				border-radius: 3px;
 		}
-		.imagerow2coloum{
-				height: 250px;
-				width: 366px;
-				padding: 4px;
-				display: inline-block;
+		
+		.col-2 .imagerow{
+				width: 50%;	
+				box-sizing: border-box;	
+				padding: 0 6px 10px 0;
+		}
+		
+		.col-3 .imagerow{
+				width: calc(100%/3);	
+				box-sizing: border-box;
+				padding: 0 5px;
+		}
+		.imagerow>img {
+				width: 100%;
 		}
 		.city{
 				position: absolute;
-				top: -228px;
+				top: 20px;
 				left: 32px;
 				font-size: 25px;
 				font-weight: bolder;
@@ -118,33 +120,19 @@
 				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 		}	
 		.properties{
-				position: absolute;
-				top: -210px;
-				left: 32px;	
-				color: white;
+				font-weight: lighter;
+				font-size: 15px;
 				text-shadow: 1px 1px 1px #000;
 				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 		}
-		.pricerow1{
+		
+		.pricerow{
 				position: absolute;
-				top: -61px;
-				left: 435px;	
-				background-color: #383838;
+				bottom: 10px;
+				right: 23px;	
+				background-color: #07c;
 				text-align: right;
-				border: 1px solid #383838;
-				color: white;
-				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-				font-size: 12px;
-				border-radius: 2px;
-				padding: 5px;				
-		}
-		.pricerow2{
-				position: absolute;
-				top: -61px;
-				left: 273px;	
-				background-color: #383838;
-				text-align: right;
-				border: 1px solid #383838;
+				border: 1px solid #07c;
 				color: white;
 				font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 				font-size: 12px;
@@ -182,51 +170,55 @@
 	</div>
 	
 	<div class = "destinations" >
-		<div >
-			<span class= "imagerow1">
-				<img  src="banglore.png" class="imagerow1coloum">
+		<div class="col-2">
+			<div class= "imagerow">
+				<img  src="banglore.png" >
 				<a href = "https://www.google.com" class = "city" >Banglore
 					<img  src="Flag.png">
+					<p class = "properties" >1,387 properties</p>
 				</a>
-				<p class = "properties" >1,387 properties</p>
-				<p class = "pricerow1">Average price<br/>&#x20B9; 2,140</p>
-			</span>
-			
-			<span class= "imagerow1">
-				<img  src="chennai.png" class="imagerow1coloum">
+				
+				<p class = "pricerow">Average price<br/>&#x20B9; 2,140</p>
+			</div><!--		
+			--><div class= "imagerow">
+				<img  src="chennai.png" >
 				<a href = "https://www.google.com" class = "city" >Chennai
 					<img  src="Flag.png">
+					<p class = "properties" >1,387 properties</p>
 				</a>
-				<p class = "properties" >1,387 properties </p>
-				<p class = "pricerow1">Average price<br/>&#x20B9; 2,140</p>
-			</span>
+				
+				<p class = "pricerow">Average price<br/>&#x20B9; 2,140</p>
+			</div>
 			
 		</div>
-		<div>
-			<span  class= "imagerow2">
-				<img  src="mumbai.png" class="imagerow2coloum">
+		<div class="col-3">
+			<div  class= "imagerow">
+				<img  src="mumbai.png">
 				<a href = "https://www.google.com" class = "city" >Mumbai
 					<img  src="Flag.png">
+					<p class = "properties" >1,387 properties</p>
 				</a>
-				<p class = "properties" >1,387 properties</p>
-				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
-			</span>
-			<span  class= "imagerow2">
-				<img  src="newdelhi.png" class="imagerow2coloum">
+				
+				<p class = "pricerow">Average price<br/>&#x20B9; 2,140</p>
+			</div><!--
+			--><div  class= "imagerow">
+				<img  src="newdelhi.png">
 				<a href = "https://www.google.com" class = "city" >New Delhi
 					<img  src="Flag.png">
+					<p class = "properties" >1,387 properties</p>
 				</a>
-				<p class = "properties" >1,387 properties</p>
-				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
-			</span>
-			<span  class= "imagerow2">
-				<img  src="hyderabad.png" class="imagerow2coloum" >
+				
+				<p class = "pricerow">Average price<br/>&#x20B9; 2,140</p>
+			</div><!--
+			--><div  class= "imagerow">
+				<img  src="hyderabad.png">
 				<a href = "https://www.google.com" class = "city" >Hyderabad
 					<img  src="Flag.png">
+					<p class = "properties" >1,387 properties</p>
 				</a>
-				<p class = "properties" >1,387 properties</p>
-				<p class = "pricerow2">Average price<br/>&#x20B9; 2,140</p>
-			</span>
+				
+				<p class = "pricerow">Average price<br/>&#x20B9; 2,140</p>
+			</div>
 		</div>
 	</div>
 	

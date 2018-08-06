@@ -5,7 +5,7 @@
 	<link rel= "shortcut icon" type = "image/png" href = "favicon.png">
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 	<style type="text/css">	</style>
-	<script></script>
+	
 </head>
 <body >
 	<header class="header">
@@ -89,8 +89,8 @@
 	
 	<div class = "slider_main_container">
 		<h3 class ="slidertitle">Great locations and deals for every budget. Find your perfect place to stay.</h3>
-		<div class = "slider">
-				
+		<div class = "outterslider">
+			<div class = "slider" Id= "slide">	
 				<div class= "imagelist" >
 				<a href="#">
 					<img  src="slider2.png">
@@ -139,16 +139,38 @@
 					<div>some text</div>
 				</a>	
 				</div>		
-				
+			</div>	
 		</div>
 		<div class = "sliderbutton">
-			<button type="button" class="buttonstyle leftbutton" >&lt;</button>
-			<button type="button" class="buttonstyle rightbutton" >&gt;</button>
+			<button type="button" class="buttonstyle leftbutton" onclick ="moveLeft()" >&lt;</button>
+			<button type="button" class="buttonstyle rightbutton" onclick ="moveRight()" >&gt;</button>
 		</div>
 	
 	</div>
 			
-	
+	<script>
+		var plusTranslateX = document.getElementById("slide");
+		var minusTranslateX = document.getElementById("slide");
+		var steps = 300;
+
+		function moveRight(){
+			
+			plusTranslateX.style['transform'] = transalateX(getIntFromTransformProperty(plusTranslateX.style['transform'] )-steps);
+		}
+		
+		function moveLeft(){
+			minusTranslateX.style['transform'] = transalateX(getIntFromTransformProperty(minusTranslateX.style['transform'] )+steps);
+		}
+		
+		function getIntFromTransformProperty(t){
+			return parseInt(t.slice(t.indexOf("(")+1,t.indexOf(")")))||0;
+		}
+		
+		function transalateX(i){
+			return "TranslateX(" + i +"px)"
+		}
+		
+	</script>
 </body>
 
 

@@ -81,7 +81,7 @@
 		.destinations{
 			margin-top: 40px;
 			padding: 0 120px 0 120px;
-			display: none;
+			
 		}
 		.imagerow {
 				position: relative;	
@@ -139,12 +139,19 @@
 				transition-delay: 0.5s;
 		}
 		.slider{
-			    overflow: auto;
-				white-space: nowrap;
+			    width: 2600px;
+				
+				transition: transform 0.5s;
+				
+		}
+		.outterslider {
+				width: 100%;
+				
+				overflow: hidden;
 		}
 		.slider .imagelist{
 			display: inline-block;
-			width: calc(100%/5);
+			width: 300px;
 			padding: 10px;	
 		}
 		.imagelist>a>img {

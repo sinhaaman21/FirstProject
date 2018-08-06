@@ -91,7 +91,7 @@
 		<h3 class ="slidertitle">Great locations and deals for every budget. Find your perfect place to stay.</h3>
 		<div class = "outterslider">
 			<div class = "slider" Id= "slide">	
-				<div class= "imagelist" >
+			<!--	<div class= "imagelist" >
 				<a href="#">
 					<img  src="slider2.png">
 					<div>some text</div>
@@ -139,7 +139,7 @@
 					<div>some text</div>
 				</a>	
 				</div>		
-			</div>	
+			</div>	-->
 		</div>
 		<div class = "sliderbutton">
 			<button type="button" class="buttonstyle leftbutton" onclick ="moveLeft()" >&lt;</button>
@@ -148,11 +148,11 @@
 	
 	</div>
 			
-	<script>
+	<script type="text/javascript">
 		var plusTranslateX = document.getElementById("slide");
 		var minusTranslateX = document.getElementById("slide");
-		var steps = 300;
-
+		var steps = 320;
+		
 		function moveRight(){
 			
 			plusTranslateX.style['transform'] = transalateX(getIntFromTransformProperty(plusTranslateX.style['transform'] )-steps);
@@ -170,6 +170,27 @@
 			return "TranslateX(" + i +"px)"
 		}
 		
+		var arrayImage = ["slider1.png", "slider2.png", "slider1.png", "slider2.png", "slider1.png", "slider2.png", "slider1.png"];
+		var arrayText = ["Text A", "Text B", "Text C", "Text D", "Text E", "Text F", "Text G"];
+		
+		create();
+		
+		function create(){
+			for (var i=0; i< arrayImage.length; i++){
+				var parent = document.getElementById("slide");
+				var div = document.createElement("div");
+				div.className="imagelist";
+				parent.appendChild(div);
+				var a = document.createElement("a");
+				div.appendChild(a);
+				var img = document.createElement("img");
+				img.src = arrayImage[i];
+				a.appendChild(img);
+				var div = document.createElement("div");
+				div.innerHTML = arrayText[i];
+				a.appendChild(div);
+			}
+		}
 	</script>
 </body>
 

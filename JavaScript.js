@@ -3,20 +3,13 @@
 		var steps = 320;
 		
 		function moveRight(){
-			if (validateTranslateValue(getIntFromTransformProperty(plusTranslateX.style['transform']))){
-				plusTranslateX.style['transform'] = transalateX(getIntFromTransformProperty(plusTranslateX.style['transform'] )-steps);
-			}
-			else {
-				plusTranslateX.style['transform'] = transalateX(-1080);
-			}			
+			var x = getIntFromTransformProperty(plusTranslateX.style['transform'] )-steps;
+			plusTranslateX.style['transform'] = x > -1080 ? transalateX(x) : transalateX(-1080);
 		}
 		
 		function moveLeft(){
-			if (validateTranslateValue(getIntFromTransformProperty(minusTranslateX.style['transform']))) {
-				minusTranslateX.style['transform'] = transalateX(getIntFromTransformProperty(minusTranslateX.style['transform'] )+steps);
-			}else {
-				minusTranslateX.style['transform'] = transalateX(0);
-			}
+			var x = getIntFromTransformProperty(minusTranslateX.style['transform'] )+steps;
+			minusTranslateX.style['transform'] = x < 0 ? transalateX(x) : transalateX(-10);
 		}
 		
 		function getIntFromTransformProperty(t){
@@ -25,10 +18,6 @@
 		
 		function transalateX(i){
 			return "TranslateX(" + i +"px)"
-		}
-		function validateTranslateValue(q)
-		{
-			return (q <= 0 && q >= -1080);
 		}
 		
 		var arrayImage = ["slider1.png", "slider2.png", "slider1.png", "slider2.png", "slider1.png", "slider2.png", "slider1.png"];

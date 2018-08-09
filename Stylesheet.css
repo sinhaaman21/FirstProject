@@ -155,6 +155,9 @@
 			padding: 10px;
 			height: 200px;	
 		}
+		.slider>div {
+			padding-left : 0;
+		}
 		.imagelist>a>img {
 			width: 100%;
 			height: 100%;
@@ -180,5 +183,16 @@
 			background-color: white;	
 		}
 		.buttonstyle.rightbutton{
-			    float: right;;
+			float: right;;
+		}
+		.search_unit_container {
+			background-color: #f7f7f7;
+			height: 230px;
+			margin: -20px -8px;
+			font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		}
+		.inner_search_unit_container {
+			padding: 45px 65px;
+			    line-height: 5px;
+				
 		}

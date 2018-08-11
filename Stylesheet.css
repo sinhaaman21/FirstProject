@@ -1,7 +1,7 @@
 
 
 		.logo{
-				margin-left: 57px;
+				margin-left: 110px;
 		}
 		.header {
 			    height: 60px;
@@ -12,7 +12,7 @@
 		.link_bar{
 				background-color: #013580;
 				height: 40px;
-				padding-left: 40px;
+				padding-left: 92px;
 				margin: -8px;
 		}
 		.link{	
@@ -41,6 +41,7 @@
 				padding: 6px;
 				margin: 5px;
 				font-size: 13px;
+				outline: none;
 		}	
 		.ListYP{
 				background-color: transparent;
@@ -51,6 +52,7 @@
 				color: white;
 				padding: 5px;
 				margin: 5px;
+				outline: none;
 		}
 		.ListYP:hover {
 				background-color: #1a4a8d;
@@ -180,7 +182,8 @@
 			font-size: 25px;
 			text-align: center;
 			font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-			background-color: white;	
+			background-color: white;
+			outline: none;	
 		}
 		.buttonstyle.rightbutton{
 			float: right;;
@@ -188,11 +191,68 @@
 		.search_unit_container {
 			background-color: #f7f7f7;
 			height: 230px;
-			margin: -20px -8px;
+			margin: 8px -8px;
+			padding: 0 113px;
 			font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 		}
-		.inner_search_unit_container {
-			padding: 45px 65px;
-			    line-height: 5px;
-				
+		.inner_search_unit_heading_container {
+			
+			padding: 30px 0 0 0;		
 		}
+		.search_heading {
+			font-weight: 400;
+			font-size: 25px;
+			line-height:32px;
+		}
+		.search_tag{
+			font-size: 13px;
+			line-height:20px;
+		}
+		.inner_search_unit_elements_container{
+			background: #febb02;
+			padding: 2px;
+			border-radius: 4px;
+		    margin: 20px 0;
+		}
+		.search_box, .check_in_out, .pax_room_pick, .search_button {
+			display: inline-block;
+
+		}
+		.search_box_element, .check_in_out_element, .pax_room_pic_element, .search_button_element{
+			height:50px;
+			border: 2px solid #febb02;	
+			width: 100%;
+			box-sizing: border-box;
+			border-radius: 4px;
+			text-decoration: none;
+			outline: none;
+		}
+		.search_box{
+			width: 40%;
+		}
+		.check_in_out, .pax_room_pick{
+			width: 25%;
+		}
+		.search_button{
+			width: 10%;
+		}
+		.search_box_element{
+			background-image: url(https://q-ak.bstatic.com/static/img/cross_product_index/accommodation/07ca5cacc9d77a7b50ca3c424ecd606114d9be75.svg);
+		}
+		.search_button_element {
+			background:#07c;
+			color: white;
+			font-weight: bold;
+			font-size: 15px;
+			
+		}
+		.search_button_element:hover {
+			background: #005999; 
+		}
+		.search_unit_checkbox_element{
+			width: 20px;
+			height: 20px;
+			border: 2px solid #bdbdbd;
+			
+		}
+		

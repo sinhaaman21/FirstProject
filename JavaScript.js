@@ -27,9 +27,21 @@
 		create();
 		
 		function create(){
+		 var html ="";
 
 			for (var i=0; i< arrayImage.length; i++){
-				var div = document.createElement("div");
+				html +=`<div class="imagelist">
+							<a><img src="`+arrayImage[i]+`">
+								<div>`+arrayText[i]+`</div>
+							</a>
+						 </div>`;
+			}
+			parent.innerHTML = html;
+		}
+			
+			
+			
+			/*	var div = document.createElement("div");
 				div.className="imagelist";
 				parent.appendChild(div);
 				var a = document.createElement("a");
@@ -41,4 +53,7 @@
 				div.innerHTML = arrayText[i];
 				a.appendChild(div);
 			}
-		}
+		}*/
+		
+		
+		
